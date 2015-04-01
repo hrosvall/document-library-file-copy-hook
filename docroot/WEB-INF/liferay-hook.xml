@@ -3,4 +3,12 @@
 
 <hook>
     <custom-jsp-dir>/META-INF/custom_jsps</custom-jsp-dir>
+    <struts-action>
+		<struts-action-path>/document_library/edit_entry</struts-action-path>
+		<struts-action-impl>com.c2.liferay.portlet.documentlibrary.action.CopyEntryAction</struts-action-impl>
+	</struts-action>
+	<struts-action>
+		<struts-action-path>/document_library/copy_entry</struts-action-path>
+		<struts-action-impl>com.c2.liferay.portlet.documentlibrary.action.CopyEntryAction</struts-action-impl>
+	</struts-action>
 </hook>

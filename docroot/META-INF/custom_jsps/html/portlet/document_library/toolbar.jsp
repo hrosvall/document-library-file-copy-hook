@@ -66,6 +66,12 @@ Group scopeGroup = themeDisplay.getScopeGroup();
 				%>
 
 				<aui:nav-item href="<%= taglibURL %>" iconCssClass="icon-move" label="move" />
+				
+				<%
+				taglibURL = "javascript:Liferay.fire('" + renderResponse.getNamespace() + "editEntry', {action: '" + Constants.COPY + "'}); void(0);";
+				%>
+
+				<aui:nav-item href="<%= taglibURL %>" iconCssClass="icon-copy" label="copy" />
 			</c:if>
 
 			<%
